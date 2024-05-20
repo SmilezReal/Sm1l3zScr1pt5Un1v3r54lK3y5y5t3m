@@ -1,0 +1,59 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Smilez Script", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Home",
+	Icon = "rbxassetid://0",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Test"
+})
+
+Tab:AddButton({
+	Name = "Test",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Test2"
+})
+
+Tab:AddButton({
+	Name = "Test2",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Home2",
+	Icon = "rbxassetid://0",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Test"
+})
+
+Tab:AddButton({
+	Name = "Test1",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Test2"
+})
+
+Tab:AddButton({
+	Name = "Test2",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
